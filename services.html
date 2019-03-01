@@ -1,38 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Services</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/index.css">
-	<!--[if IE]>
+    <meta charset="utf-8">
+    <title>Services</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <![endif]-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
 
-	<h1>Services</h1>
+    <div class="containerss">
+        <header>
+            <h1>S&J</h1>
+            <nav class="navver">
 
-<!-- Services Content 
-  Services
-  
-  Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
--->
-
-<!-- *** NOTE *** Tab Navigator Content: I used the same text for each tab to make it easy, Note that the images and text do change on click but you can just use the same text for each tab element.  All the images should be in the img folder.
-
-  Pre-Construction
-  Construction
-  Design Build
-  Sustainability
-
-  Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.  Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+                <div id="myNav" class="overlay">
 
 
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
--->
+                    <div class="overlay-content">
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="Projects.html">Projects</a>
+                    </div>
 
-	<script src="js/index.js"></script>
+                </div>
+
+
+                <img src='img/nav-hamburger.png' onclick="openNav()">
+            </nav>
+        </header>
+
+        <div class="servicesimage">
+            <div class="servicetext">
+                <h2>Services</h2>
+            </div>
+        </div>
+
+
+
+        <div class="servcontain">
+            <div class="servtext">
+                <p>Services include completely synergizes resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of
+                    the art customer services.</p>
+            </div>
+
+
+
+            <div class="tab-links">
+                <div class="link" data-tab="1">Pre-Construction</div>
+                <div class="link" data-tab='2'>Construction</div>
+                <div class="link " data-tab="3">Design Build</div>
+                <div class="link" data-tab="4">Sustainability</div>
+            </div>
+
+            <div class="tabcontain" data-tab="1">
+                <div class="tabcontent">
+                    <h3>Pre-Construction</h3>
+                    <p class="ptag">
+                        Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.<br
+                        /><br /> Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through
+                        sustainable potentialities.
+                    </p>
+                    </p>
+                </div>
+                <img class='preconimg' src="img/services/services-tab-pre-construction-img.png" alt="" class="img">
+
+            </div>
+
+            <div class="tabcontain" data-tab="2">
+                <div class="tabcontent">
+                    <h3>Construction</h3>
+                    <p class="ptag">
+                        Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.<br
+                        /><br /> Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through
+                        sustainable potentialities.
+                    </p>
+                </div>
+                <img src="img/services/services-tab-construction-img.png" alt="" class="img">
+            </div>
+
+            <div class="tabcontain" data-tab="3">
+                <div class="tabcontent">
+                    <h3>Design Build</h3>
+                    <p class="ptag">
+                        Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.<br
+                        /><br /> Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through
+                        sustainable potentialities.
+                    </p>
+                </div>
+                <img src="img/services/services-tab-design-build-img.png" alt="" class="img">
+            </div>
+
+            <div class="tabcontain" data-tab="4">
+                <div class="tabcontent">
+                    <h3>Sustainability</h3>
+                    <p class="ptag">
+                        Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.<br
+                        /><br /> Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through
+                        sustainable potentialities.
+                    </p>
+                </div>
+                <img src="img/services/services-tab-sustainability-img.png" alt="" class="img">
+            </div>
+
+        </div>
+
+
+
+        <footer class='foot'>
+            <div class='foot-container'>
+                <div class="column">
+                    <h3>Interested in starting a project?</h3>
+                    <h3>Let's Talk</h3>
+                    <input id='input' type="text" placeholder="Enter Email" />
+                    <h5>We'll never share your email with anyone else.</h5>
+                </div>
+
+                <div class="columns">
+                    <h4>New York</h4>
+                    <p>123 Lane</p>
+                    <p>Suite 100</p>
+                    <p>Albany, NY 12345</p>
+                    <p>202 555 0144</p>
+                </div>
+
+                <div class="columns">
+                    <h4>Florida</h4>
+                    <p>Ocean Drive</p>
+                    <p>Suite 201</p>
+                    <p>Orlando, FL 22345</p>
+                    <p>502 555 0144</p>
+                </div>
+
+                <div class="columns">
+                    <h4>California</h4>
+                    <p>Mountain Street</p>
+                    <p>Suiter 105</p>
+                    <p>San Diego, CA 22345</p>
+                    <p>702 555 0144</p>
+                </div>
+            </div>
+            <!-- <div class="copy">
+                <p>Copyright © 2018 Smith and Jones</p>
+            </div> 
+
+
+
+                      
+                    </footer>
+                    <p class='foots-p'>Copyright © 2018 Smith and Jones</p>
+                    <!-- <div class="copy">Copyright © 2018 Smith and Jones</div> -->
+            <!-- <div>
+        <p class="copy">Copyright © 2018 Smith and Jones</p>
+    </div> -->
+
+
+
+
+
+            <script src="js/index.js"></script>
 </body>
+
 </html>
