@@ -8,6 +8,7 @@ function closeNav() {
 }
 
 
+
 class TabLink {
     constructor(elem) {
         this.elem = elem;
@@ -54,15 +55,27 @@ links = Array.from(links).map(link => new TabLink(link));
 links[0].select();
 
 
-// let links = document.querySelectorAll('.link')
-// links = Array.from(links).forEach((links) => {
-//     new TabItem(links)
-// })
-// links[0].select()
 
 
-// links.forEach(link => new TabLink(link))
-// links[0].selectTab()
-// links[1].selectTab()
-// links[2].selectTab()
-// links[3].selectTab()
+
+
+
+
+
+
+var acc = document.getElementsByClassName("accordion");
+
+
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}

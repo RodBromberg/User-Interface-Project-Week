@@ -1,25 +1,40 @@
-body {
+.contact-body {
     width: 880px;
     margin: 0 auto;
+    @media (max-width: 500px) {
+        width: 100%;
+    }
     header {
     font-weight: bold;
     font-size: 24px;
     color: #FFFFFF;
-    background: #D8D8D8;
+    background: grey;
     display: flex;
     height: 35px;
     padding-top: 1%;
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 8%;
+    @media (max-width: 500px) {
+        width: 86%;
     }
+    }
+
+
 }
 
 .contact-img {
     background-image: url(../img/contact/contact-jumbotron.png);
-    // width: 100%;
     height: 200px;
     background-repeat: round;
+    @media (max-width: 500px) {
+        background-image: url(../img/contact/contact-mobile-jumbotron.png);
+        background-size: cover;
+        color: #ffffff;
+        background-repeat: no-repeat, repeat;
+        background-position: bottom;
+        width: 100%;
+    }
 }
 
 .contact-container {
@@ -29,8 +44,15 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 3%;
+    @media (max-width: 500px) {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
     button {
-        width: 120px;
+        width: 100%;
         height: 40px;
         margin-top: 5%;
         border: 1px solid #222222;
@@ -58,11 +80,18 @@ body {
     width: 39%;
     display: flex;
     align-items: flex-end;
+    @media (max-width: 500px) {
+        margin-top: 10%;
+    }
     .where-work {
         margin-bottom: 5%;
         margin-right: 21%;
         background-color: white;
         font-size: 1.125rem;
+        @media (max-width: 500px) {
+            margin-top: 10%;
+            margin-right: 4%; 
+        }
     }
  
     .h3-right-column {
@@ -76,6 +105,15 @@ body {
         width: 55%;
         padding-right: 5%;
         margin-bottom: 14%;
+
+
+        @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding-right: 5%;
+        margin-bottom: 14%;
+        }
         p {
             line-height: 1.2;
         }
